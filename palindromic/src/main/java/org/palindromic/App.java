@@ -19,14 +19,13 @@ public class App
 	 * s[i,j] <====> s[i-1]s[i,j-1]s[j]
 	 * 
 	 * */
-	private void dP() {
+	private void dP(String str) {
 		//默认最大回文的开始和结束 ,end-start+1表示最大回文的长度
 		int start = 0;
 		int end = 0;
 		
 		int a[][] = new int[2][2];
 		
-		String str = "123";
 		int size = str.length();
 		//标记动态规划的矩阵
 		boolean [][] arr = new boolean[size][size];
@@ -93,10 +92,12 @@ public class App
 			System.exit(-1);
 		}
     	
+    	String str = args[args.length-1];
+    	
     	App start = new App();
     	switch (type) {
 		case 0:
-			start.dP();
+			start.dP(str);
 			break;
 		case 1:
 			start.violence();
