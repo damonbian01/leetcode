@@ -8,5 +8,6 @@
   <modules>
   	<module>palindromic</module>
     <module>Median</module>
+    <module>ZipZag</module>
   </modules>
 </project>
