@@ -9,5 +9,6 @@
   	<module>palindromic</module>
     <module>Median</module>
     <module>ZipZag</module>
+    <module>javaBasic</module>
   </modules>
 </project>
